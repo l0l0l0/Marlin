@@ -12,7 +12,7 @@
 //#define MachineCR20Pro
 //#define MachineCR10S
 //#define MachineCR10SV2
-//#define MachineCR10SPro // Graphics LCD Requires soldering R64 and R66
+#define MachineCR10SPro // Graphics LCD Requires soldering R64 and R66
 //#define MachineCR10SProV2 // Second Gen 10S Pro with BLTouch wired to Z Max
 //#define MachineCRX
 //#define MachineCRXPro
@@ -55,9 +55,9 @@
 //#define HotendMosquito
 
 //Enable this if you have an all metal hotend capable of 300c
-#ifndef HotendAllMetal
+//#ifndef HotendAllMetal
   #define HotendAllMetal
-#endif
+//#endif
 
 // Enable this if you used a plug and play creality e3d or mosquito kit and kept the Creality thermistor
 //#define CrealityThermistor
@@ -74,14 +74,14 @@
  //#define DDXExtruderKit
 
  //#define MicroswissDirectDrive
- //#define DirectDrive // Any direct drive extruder, reduces filament change lengths
+ #define DirectDrive // Any direct drive extruder, reduces filament change lengths
 
 /*
    Choose bed type below. If you have an extenrally controlled
    ac bed, leave both disabled
 */
 //#define BedAC
-//#define BedDC
+#define BedDC
 
 //#define SolidBedMounts //Removed a few LCD options to save some memory since not needed with solid mounts
 
@@ -91,7 +91,7 @@
 */
 //#define ABL_EZABL // TH3D EZABL or Any NO Sensor
 //#define ABL_NCSW //Creality ABL or Any NC Sensor
-//#define ABL_BLTOUCH
+#define ABL_BLTOUCH
 //#define ABL_TOUCH_MI // Uncomment ABL_TOUCH_MI to use Touch-MI sensor by hotends.fr
 
 //#define CREALITY_ABL_MOUNT //Using creality ABL mount
@@ -109,7 +109,7 @@
 
 // Touchscreen options - only 32 bit boards have the open serial ports to use with graphics displays above
 //#define ForceCRXDisplay
-//#define Force10SProDisplay
+#define Force10SProDisplay
 
 //#define AddonFilSensor //Adds a filament runout sensor to the CR20 or Ender 4
 //#define lerdgeFilSensor //Using lerdge filament sensor, which is opposite polarity to stock
@@ -133,7 +133,7 @@
    If a probe is enabled and nothing selected here, defaults to Bilinear
 */
 //#define ABL_BI
-//#define ABL_UBL
+#define ABL_UBL
 
 /*
    For melzi boards these options allow you to cusomize what you want to do.
@@ -157,19 +157,19 @@
 //#define SKR13 // 32 bit board - assumes 2208 drivers
 //#define SKR14
 //#define SKR14Turbo
-//#define SKRPRO11
+#define SKRPRO11
 
 // This board is NOT recommended and is HIGHLY advised against utilizing the expanded builds for.
 // The MCU is rated for 256kb and stability problems, including hangs with heaters on, have been reported.
 
 //#define SKRMiniE3V2
 
-//#define I2C_EEPROM  // use I2C EEPROM on SRK PRO v1.1 e.g AT24C256
+#define I2C_EEPROM  // use I2C EEPROM on SRK PRO v1.1 e.g AT24C256
 //#define SKR14_PowerLossKit // Bigtreetech power loss kit for SKR14
 
-//#define SKR_2209
+#define SKR_2209
 //#define SKR_2130
-//#define SKR_UART // Configure SKR board with drivers in UART mode or SPI for TMC2130
+#define SKR_UART // Configure SKR board with drivers in UART mode or SPI for TMC2130
 //#define SKR_ReverseSteppers // Some users reported directions backwards than others on SKR with various drivers.
 //#define DualZ // Uses 5th driver on CRX or SKR boards as Z2
 
@@ -195,7 +195,7 @@
 */
 //#define MeshFast
 //#define MeshStd
-//#define MeshFine
+#define MeshFine
 //#define MeshExtreme
 
 /*
